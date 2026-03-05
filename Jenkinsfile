@@ -25,11 +25,11 @@ pipeline {
             }
         }
 
-        /*stage('Push Docker Image') {
+        stage('Push Docker Image') {
             steps {
                 sh 'docker push vsk2004/node-docker-app:${BUILD_NUMBER}'
             }
-        }*/
+        }
         
         stage('Create container') {
             steps {
