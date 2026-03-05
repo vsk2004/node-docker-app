@@ -16,14 +16,14 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        /*stage('Build Docker Image') {
             steps {
                 sh '''
                 docker build -t node-docker-app:${BUILD_NUMBER} .
                 docker tag node-docker-app:${BUILD_NUMBER} vsk2004/node-docker-app:${BUILD_NUMBER}
                 '''
             }
-        }
+        }*/
 
         stage('Push Docker Image') {
             steps {
